@@ -1,0 +1,11 @@
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\bin\Debug\MainServerWindow.exe.config
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\bin\Debug\MainServerWindow.exe
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\bin\Debug\MainServerWindow.pdb
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\bin\Debug\ServerLibrary.dll
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\bin\Debug\ServerLibrary.pdb
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\ServerProject.csprojResolveAssemblyReference.cache
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\NetrikaProject.Server.MainServerWindow.resources
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\NetrikaProject.Server.Properties.Resources.resources
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\ServerProject.csproj.GenerateResource.Cache
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\MainServerWindow.exe
+D:\Projects\Other projects\NetrikaProject\MainServerWindow\obj\x86\Debug\MainServerWindow.pdb

@@ -1,0 +1,5 @@
+D:\Projects\Other projects\NetrikaProject\ClientLibrary\bin\Debug\ClientLibrary.dll.config
+D:\Projects\Other projects\NetrikaProject\ClientLibrary\bin\Debug\ClientLibrary.dll
+D:\Projects\Other projects\NetrikaProject\ClientLibrary\bin\Debug\ClientLibrary.pdb
+D:\Projects\Other projects\NetrikaProject\ClientLibrary\obj\Debug\ClientLibrary.dll
+D:\Projects\Other projects\NetrikaProject\ClientLibrary\obj\Debug\ClientLibrary.pdb

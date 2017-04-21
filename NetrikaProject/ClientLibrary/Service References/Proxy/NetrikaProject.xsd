@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://NetrikaProject" elementFormDefault="qualified" targetNamespace="http://NetrikaProject" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RegisterClient">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RegisterClientResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
