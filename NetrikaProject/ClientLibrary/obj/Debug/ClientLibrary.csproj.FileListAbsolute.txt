@@ -3,3 +3,8 @@ D:\Projects\Other projects\NetrikaProject\ClientLibrary\bin\Debug\ClientLibrary.
 D:\Projects\Other projects\NetrikaProject\ClientLibrary\bin\Debug\ClientLibrary.pdb
 D:\Projects\Other projects\NetrikaProject\ClientLibrary\obj\Debug\ClientLibrary.dll
 D:\Projects\Other projects\NetrikaProject\ClientLibrary\obj\Debug\ClientLibrary.pdb
+D:\Projects\Other projects\NetrikaProject_1\ClientLibrary\bin\Debug\ClientLibrary.dll.config
+D:\Projects\Other projects\NetrikaProject_1\ClientLibrary\bin\Debug\ClientLibrary.dll
+D:\Projects\Other projects\NetrikaProject_1\ClientLibrary\bin\Debug\ClientLibrary.pdb
+D:\Projects\Other projects\NetrikaProject_1\ClientLibrary\obj\Debug\ClientLibrary.dll
+D:\Projects\Other projects\NetrikaProject_1\ClientLibrary\obj\Debug\ClientLibrary.pdb

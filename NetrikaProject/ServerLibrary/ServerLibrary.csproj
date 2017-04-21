@@ -51,6 +51,57 @@
     <Compile Include="ContractIServer.cs" />
     <Compile Include="ServerBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Netrika\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\Netrika\NetrikaProject.Server.Netrika.PatientDto.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Netrika\NetrikaProject.Server.Netrika.VersionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Netrika\PixService.wsdl" />
+    <None Include="Service References\Netrika\PixService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Netrika\PixService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Netrika\PixService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Netrika\PixService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Netrika\PixService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Netrika\PixService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Netrika\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Netrika\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Netrika\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Netrika\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

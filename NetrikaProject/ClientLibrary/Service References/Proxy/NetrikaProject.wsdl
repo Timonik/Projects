@@ -3,6 +3,8 @@
   <wsdl:types>
     <xsd:schema targetNamespace="http://NetrikaProject/Imports">
       <xsd:import namespace="http://NetrikaProject" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/EMKService.Data.Dto" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IServer_RegisterClient_InputMessage">
@@ -11,10 +13,20 @@
   <wsdl:message name="IServer_RegisterClient_OutputMessage">
     <wsdl:part name="parameters" element="tns:RegisterClientResponse" />
   </wsdl:message>
+  <wsdl:message name="IServer_AddPatient_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatient" />
+  </wsdl:message>
+  <wsdl:message name="IServer_AddPatient_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPatientResponse" />
+  </wsdl:message>
   <wsdl:portType msc:usingSession="true" name="IServer">
     <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="RegisterClient">
       <wsdl:input wsaw:Action="http://NetrikaProject/IServer/RegisterClient" message="tns:IServer_RegisterClient_InputMessage" />
       <wsdl:output wsaw:Action="http://NetrikaProject/IServer/RegisterClientResponse" message="tns:IServer_RegisterClient_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation msc:isInitiating="true" msc:isTerminating="false" name="AddPatient">
+      <wsdl:input wsaw:Action="http://NetrikaProject/IServer/AddPatient" message="tns:IServer_AddPatient_InputMessage" />
+      <wsdl:output wsaw:Action="http://NetrikaProject/IServer/AddPatientResponse" message="tns:IServer_AddPatient_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
 </wsdl:definitions>

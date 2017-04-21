@@ -33,8 +33,22 @@ namespace NetrikaProject.Server
             clients = new Dictionary<string, IClient>();
         }
 
+        public void AddPatient(string _guid, string _idLpu, Netrika.PatientDto _patientDto)
+        {
+            Netrika.PixServiceClient psc = new Netrika.PixServiceClient("BasicHttpBinding_IPixService");
+
+            try
+            {
+                psc.AddPatient(_guid, _idLpu, _patientDto);
+            }
+            catch (FaultException<Netrika.RequestFault> edc)
+            {
+
+            }
+        }
+
         public void RegisterClient(string name)
-        {            
+        { 
             try
             {
                 IClient c = OperationContext.Current.GetCallbackChannel<IClient>();

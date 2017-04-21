@@ -5,6 +5,7 @@ using System.Text;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Data;
+using NetrikaProject.Server.Netrika;
 
 namespace NetrikaProject.Contracts
 {
@@ -14,5 +15,9 @@ namespace NetrikaProject.Contracts
         [OperationContract]
         [WebInvoke(Method = "POST")]
         void RegisterClient(string ClientLocalName);
+
+        [OperationContract]
+        [WebInvoke(Method = "POST")]
+        void AddPatient(string Guid, string IdLpu, PatientDto PatienDto);
     }
 }

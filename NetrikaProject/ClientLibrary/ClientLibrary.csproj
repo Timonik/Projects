@@ -58,7 +58,13 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\Proxy\EMKService.Data.Dto.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\Proxy\NetrikaProject.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy\service.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\Proxy\service1.wsdl" />

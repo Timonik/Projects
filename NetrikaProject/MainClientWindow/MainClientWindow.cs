@@ -52,5 +52,17 @@ namespace NetrikaProject.Client
                 throw new Exception(ex.Message);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            client.AddPatient(new PatientDto()
+            {
+                BirthDate = new DateTime(1986, 03, 11),
+                FamilyName = "Иванов",
+                GivenName = "Иван",
+                IdPatientMIS = "NewPacientTest2",
+                Sex = 1
+            });
+        }
     }
 }

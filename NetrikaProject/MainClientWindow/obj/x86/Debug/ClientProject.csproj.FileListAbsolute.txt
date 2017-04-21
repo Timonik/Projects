@@ -8,3 +8,13 @@ D:\Projects\Other projects\NetrikaProject\MainClientWindow\obj\x86\Debug\Netrika
 D:\Projects\Other projects\NetrikaProject\MainClientWindow\obj\x86\Debug\ClientProject.csproj.GenerateResource.Cache
 D:\Projects\Other projects\NetrikaProject\MainClientWindow\obj\x86\Debug\MainClientWindow.exe
 D:\Projects\Other projects\NetrikaProject\MainClientWindow\obj\x86\Debug\MainClientWindow.pdb
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\bin\Debug\MainClientWindow.exe.config
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\bin\Debug\MainClientWindow.exe
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\bin\Debug\MainClientWindow.pdb
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\bin\Debug\ClientLibrary.dll
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\bin\Debug\ClientLibrary.pdb
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\obj\x86\Debug\ClientProject.csprojResolveAssemblyReference.cache
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\obj\x86\Debug\NetrikaProject.Client.MainClientWindow.resources
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\obj\x86\Debug\ClientProject.csproj.GenerateResource.Cache
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\obj\x86\Debug\MainClientWindow.exe
+D:\Projects\Other projects\NetrikaProject_1\MainClientWindow\obj\x86\Debug\MainClientWindow.pdb
