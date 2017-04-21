@@ -26,6 +26,7 @@
     <MetadataFile FileName="NetrikaProject.xsd" MetadataType="Schema" ID="f74147f5-3dfc-4b32-aec4-b71efb2768d3" SourceId="1" SourceUrl="net.tcp://localhost:9000/Server/Mex" />
     <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="429797eb-b6a1-48f7-9dac-1e25d35377f7" SourceId="1" SourceUrl="net.tcp://localhost:9000/Server/Mex" />
     <MetadataFile FileName="EMKService.Data.Dto.xsd" MetadataType="Schema" ID="f9fa89fa-cc60-4d91-894c-931af3e46d15" SourceId="1" SourceUrl="net.tcp://localhost:9000/Server/Mex" />
+    <MetadataFile FileName="N3.EMK.Dto.Common.xsd" MetadataType="Schema" ID="0daf07ff-020c-4f7d-bd94-588dc2b9ea33" SourceId="1" SourceUrl="net.tcp://localhost:9000/Server/Mex" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

@@ -7,4 +7,3 @@ D:\Projects\Other projects\NetrikaProject_1\ServerLibrary\bin\Debug\ServerLibrar
 D:\Projects\Other projects\NetrikaProject_1\ServerLibrary\bin\Debug\ServerLibrary.pdb
 D:\Projects\Other projects\NetrikaProject_1\ServerLibrary\obj\Debug\ServerLibrary.dll
 D:\Projects\Other projects\NetrikaProject_1\ServerLibrary\obj\Debug\ServerLibrary.pdb
-D:\Projects\Other projects\NetrikaProject_1\ServerLibrary\obj\Debug\ServerLibrary.csprojResolveAssemblyReference.cache

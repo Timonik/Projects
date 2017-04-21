@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://NetrikaProject" elementFormDefault="qualified" targetNamespace="http://NetrikaProject" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import namespace="http://schemas.datacontract.org/2004/07/EMKService.Data.Dto" />
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/N3.EMK.Dto.Common" />
   <xs:element name="RegisterClient">
     <xs:complexType>
       <xs:sequence>
@@ -24,7 +25,9 @@
   </xs:element>
   <xs:element name="AddPatientResponse">
     <xs:complexType>
-      <xs:sequence />
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/N3.EMK.Dto.Common" minOccurs="0" name="AddPatientResult" nillable="true" type="q2:RequestFault" />
+      </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>

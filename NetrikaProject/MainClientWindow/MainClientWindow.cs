@@ -53,16 +53,37 @@ namespace NetrikaProject.Client
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void _sendButton_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(_familyNameTextBox.Text) || String.IsNullOrEmpty(_givenNameTextBox.Text) || String.IsNullOrEmpty(_idPatientMISTextBox.Text) || _sexComboBox.SelectedIndex == -1)
+            {
+                MessageBox.Show("Заполнены не все обязательные поля!", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             client.AddPatient(new PatientDto()
             {
-                BirthDate = new DateTime(1986, 03, 11),
-                FamilyName = "Иванов",
-                GivenName = "Иван",
-                IdPatientMIS = "NewPacientTest2",
-                Sex = 1
+                BirthDate = _birthDayDateTimePicker.Value,
+                FamilyName = _familyNameTextBox.Text,
+                GivenName = _givenNameTextBox.Text,
+                IdPatientMIS = _idPatientMISTextBox.Text,
+                Sex = (byte)_sexComboBox.SelectedIndex
             });
+
+            switch(client.Detail.ErrorCode)
+            {
+                case 23:
+                    MessageBox.Show("Пациент с такими данными уже существует");
+                    break;
+                case 99:
+                    MessageBox.Show("Пациент успешно добавлен");
+                    break;
+            }
+        }
+
+        private void _exitButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -1269,6 +1269,99 @@ namespace NetrikaProject.Client.Proxy {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RequestFault", Namespace="http://schemas.datacontract.org/2004/07/N3.EMK.Dto.Common")]
+    [System.SerializableAttribute()]
+    public partial class RequestFault : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PropertyNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string MessageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ErrorCodeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private NetrikaProject.Client.Proxy.RequestFault[] ErrorsField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PropertyName {
+            get {
+                return this.PropertyNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PropertyNameField, value) != true)) {
+                    this.PropertyNameField = value;
+                    this.RaisePropertyChanged("PropertyName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=1)]
+        public string Message {
+            get {
+                return this.MessageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MessageField, value) != true)) {
+                    this.MessageField = value;
+                    this.RaisePropertyChanged("Message");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int ErrorCode {
+            get {
+                return this.ErrorCodeField;
+            }
+            set {
+                if ((this.ErrorCodeField.Equals(value) != true)) {
+                    this.ErrorCodeField = value;
+                    this.RaisePropertyChanged("ErrorCode");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public NetrikaProject.Client.Proxy.RequestFault[] Errors {
+            get {
+                return this.ErrorsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ErrorsField, value) != true)) {
+                    this.ErrorsField = value;
+                    this.RaisePropertyChanged("Errors");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://NetrikaProject", ConfigurationName="Proxy.IServer", SessionMode=System.ServiceModel.SessionMode.Required)]
     public interface IServer {
@@ -1277,7 +1370,7 @@ namespace NetrikaProject.Client.Proxy {
         void RegisterClient(string ClientLocalName);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://NetrikaProject/IServer/AddPatient", ReplyAction="http://NetrikaProject/IServer/AddPatientResponse")]
-        void AddPatient(string Guid, string IdLpu, NetrikaProject.Client.Proxy.PatientDto PatienDto);
+        NetrikaProject.Client.Proxy.RequestFault AddPatient(string Guid, string IdLpu, NetrikaProject.Client.Proxy.PatientDto PatienDto);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -1311,8 +1404,8 @@ namespace NetrikaProject.Client.Proxy {
             base.Channel.RegisterClient(ClientLocalName);
         }
         
-        public void AddPatient(string Guid, string IdLpu, NetrikaProject.Client.Proxy.PatientDto PatienDto) {
-            base.Channel.AddPatient(Guid, IdLpu, PatienDto);
+        public NetrikaProject.Client.Proxy.RequestFault AddPatient(string Guid, string IdLpu, NetrikaProject.Client.Proxy.PatientDto PatienDto) {
+            return base.Channel.AddPatient(Guid, IdLpu, PatienDto);
         }
     }
 }

@@ -61,6 +61,12 @@
     <None Include="Service References\Proxy\EMKService.Data.Dto.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\Proxy\N3.EMK.Dto.Common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Proxy\NetrikaProject.Client.Proxy.RequestFault.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\Proxy\NetrikaProject.xsd">
       <SubType>Designer</SubType>
     </None>

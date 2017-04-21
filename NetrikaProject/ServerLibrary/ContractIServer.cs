@@ -18,6 +18,6 @@ namespace NetrikaProject.Contracts
 
         [OperationContract]
         [WebInvoke(Method = "POST")]
-        void AddPatient(string Guid, string IdLpu, PatientDto PatienDto);
+        RequestFault AddPatient(string Guid, string IdLpu, PatientDto PatienDto);
     }
 }

@@ -33,7 +33,7 @@ namespace NetrikaProject.Server
             clients = new Dictionary<string, IClient>();
         }
 
-        public void AddPatient(string _guid, string _idLpu, Netrika.PatientDto _patientDto)
+        public Netrika.RequestFault AddPatient(string _guid, string _idLpu, Netrika.PatientDto _patientDto)
         {
             Netrika.PixServiceClient psc = new Netrika.PixServiceClient("BasicHttpBinding_IPixService");
 
@@ -43,8 +43,9 @@ namespace NetrikaProject.Server
             }
             catch (FaultException<Netrika.RequestFault> edc)
             {
-
+                return edc.Detail;
             }
+            return new Netrika.RequestFault();
         }
 
         public void RegisterClient(string name)
